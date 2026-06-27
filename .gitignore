@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/__pycache__/
+venv/
+__pycache__/
+.expo/
+
+# Environment variables
+.env
+frontend/.env
+backend/.env
+
+# Databases
+*.sqlite
+*.db
+backend/splitwise.db

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: splitsmart-api
+    env: docker
+    region: oregon
+    plan: free
+    rootDir: backend
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
